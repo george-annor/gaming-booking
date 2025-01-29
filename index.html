@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamers Nexus Booking</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="page-container">
+        <section class="background-section">
+            <div class="overlay"></div>
+        </section>
+
+        <section class="form-section">
+            <div class="form-container">
+                <h2 class="form-title">Welcome to Gamers Nexus</h2>
+                <form id="bookingForm" 
+                      method="POST" 
+                      action="https://script.google.com/macros/s/AKfycbyBdask5nHhYJp7XcCwVZNDh-RyZnEA_h9WV_nqMZEyyYMtYCA5E2Ku9SK-CgWbXtft9g/exec"
+                      class="gform"
+                      data-email="nanaagyemangmichael11@gmail.com">
+                      
+                    <!-- Add a honeypot field for spam protection -->
+                    <input type="text" name="honeypot" style="display:none;">
+                    
+                    <!-- Your existing form fields -->
+                    <label for="name">Contact Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    
+  
+                      <label for="phone">Phone Number</label>
+                      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required />
+  
+                      <label for="location">Location or Hostel Name</label>
+                      <input type="text" id="location" name="location" placeholder="Your Location" required />
+  
+                      <label for="date">Preferred booking date</label>
+                      <input type="date" id="date" name="date" required />
+  
+                      <label>Select Your Games and accessories</label>
+                      <div class="checkbox-group">
+                          <label class="checkbox-label">
+                              <input type="checkbox" name="games[]" value="FIFA 23" />
+                              <span>FIFA 23</span>
+                          </label>
+                          <label class="checkbox-label">
+                              <input type="checkbox" name="games[]" value="FORZA HORIZON 4" />
+                              <span>FORZA HORIZON 4</span>
+                          </label>
+                          <label class="checkbox-label">
+                              <input type="checkbox" name="games[]" value="MK 1" />
+                              <span>MK 1</span>
+                          </label>
+                          <label class="checkbox-label">
+                              <input type="checkbox" name="games[]" value="NBA 2K23" />
+                              <span>NBA 2K23</span>
+                          </label>
+                          <label class="checkbox-label">
+                              <input type="checkbox" name="games[]" value="CALL OF DUTY" />
+                              <span>CALL OF DUTY</span>
+                          </label>
+                          <label class="checkbox-label">
+                              <input type="checkbox" name="games[]" value="ALL PES VERSIONS" />
+                              <span>ALL PES VERSIONS</span>
+                          </label>
+                         <label class="checkbox-label">
+                              <input type="checkbox" name="games[]" value="ALL GAMING ACCESSORIES" />
+                              <span>ALL GAMING ACCESSORIES</span>
+                          </label>
+                          <label class="checkbox-label">
+                              <input type="checkbox" name="games[]" value="Others" />
+                              <span>OTHERS</span>
+                          </label>
+                      </div>
+  
+                      <label for="others">Specify other games or accessories</label>
+                      <textarea id="others" name="others" rows="4" placeholder="Specify other games and accessories (eg: game pad and Watch dogs)"></textarea>
+                    
+                    <!-- Keep all other form fields the same -->
+                    <!-- ... (your existing phone, location, date, and games fields) ... -->
+                    
+                    <button type="submit" class="submit-btn">Book Now</button>
+                </form>
+                
+                <!-- Success message container -->
+                <div class="thankyou_message" style="display:none;">
+                    <h3>Thank you for your booking! We'll contact you soon.</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="/JS/app.js"></script>
+</body>
+</html>
