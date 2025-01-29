@@ -17,7 +17,7 @@ body {
 
 .background-section {
     flex: 1;
-    background-image: url('/gaming-booking-master/img/jippe-joosten-0gNzcMqd0sw-unsplash.jpg');
+    background-image: url('/img/jippe-joosten-0gNzcMqd0sw-unsplash.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
